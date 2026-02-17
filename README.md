@@ -28,6 +28,8 @@
 ### ansible
 ```ansible -i inventory/hosts.yml all -m ansible.builtin.ping```
 * Uses the ping module to verify SSH connectivity to all inventory hosts
+* -i for inventory file to specify which inventory file to use
+* -m for module for which ansible module to use like ping
 
 ```ansible-playbook -i inventory/hosts.yml playbook.yml --syntax-check```
 * Validates the playbook syntax
